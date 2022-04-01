@@ -12,8 +12,7 @@
 * Run the app: python3 app.py
 
 ## Features
-* Login System
-![Screen Shot 2022-04-01 at 2 59 39 PM](https://user-images.githubusercontent.com/57018537/161325499-ce4a6fdc-8acf-42ba-ac73-6e14286ab2eb.png)
+* Login System ![Screen Shot 2022-04-01 at 2 59 39 PM](https://user-images.githubusercontent.com/57018537/161325499-ce4a6fdc-8acf-42ba-ac73-6e14286ab2eb.png)
 
 * Main Page (When the user refreshes the page it will generate a new movie) 
 ![Screen Shot 2022-04-01 at 2 58 54 PM](https://user-images.githubusercontent.com/57018537/161325529-3dcb8c22-7097-4f20-b1ce-403a1077a335.png)
