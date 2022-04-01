@@ -21,5 +21,5 @@
 * Reviews Section (User is able to leave a review/rating for a particular movie) 
 ![Screen Shot 2022-04-01 at 2 59 09 PM](https://user-images.githubusercontent.com/57018537/161325675-85309774-62c9-4004-ae48-5e52a58d9092.png)
 
-* Profile (Will display all the reviews a user has left)
+* Profile (Will display all the reviews a user has left. User is able to edit and delete a review)
 ![Screen Shot 2022-04-01 at 2 59 25 PM](https://user-images.githubusercontent.com/57018537/161325797-0be42b9a-41b4-4045-bd73-87e6d5025991.png)
