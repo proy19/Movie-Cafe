@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cafe! </title>
+    <link rel="stylesheet" href="/static/style.css" >
+    
+</head>
+<body>
+  
+   <div class="movie-data">
+     <!-- URL for logout and profile page -->
+    <a class = logout-btn href="./static/react/index.html">Profile (Saved Reviews)</a><br>
+    <a class = logout-btn href="{{url_for('logout')}}">Log Out</a>
+    <p></p>
+
+    <!-- Movie Data -->
+    <h1 class="header">Movie Cafe 🍵</h1>
+    <h1><b>{{title}}</b></h1>
+    <p><i>"{{tagline}}"</i></p>
+    <p><b>Genre: {{genre}}</b></p>
+    <img src={{poster}} alt="">
+  <p><a class="wiki-btn" href="{{wiki_url}}">Click here to see Wikipedia Page!</a></p>
+   </div>
+  <!-- Comment section -->
+    <div class="comment-sec">
+      <h3> REVIEW? 📝 </h3>
+      <form method="POST" action="/dashboard">
+        Movie ID: <input type="text" name="movieID" placeholder = "Movie ID" value={{id}} readonly = "readonly" />
+        Rating (out of 5): <input type="text" name="rate"/>
+        <p></p>
+        <textarea name="comment" placeholder = "Leave a review"></textarea>
+        <p></p>
+        <input class="btn" type="submit" value="Submit"/>
+    </form>
+    </div>    
+    <div class="comment-sec">
+      <!-- Display reviews from the database -->
+      <h3>POPULAR REVIEWS 🌟</h3>
+      {% for i in range(num_reviews) %}
+            
+            <b>User: {{reviews[i].name}}</b><br>
+            <b>Rating: {{reviews[i].rate}} / 5</b><br>
+            <p>"{{reviews[i].comment}}"</p><br>
+            
+            
+        {% endfor %}
+   
+    </div>       
+    
+</body>
+</html>
